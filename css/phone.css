@@ -1,0 +1,157 @@
+@media screen and (max-width:480px) {
+    .ham {
+        width: 70px;
+        height: 70px;
+    }
+    .ham span {
+        width: 30px;
+        height: 2px;
+    }
+    .ham span::before {
+        width: 30px;
+        height: 2px;
+    }
+    .ham span::after {
+        width: 30px;
+        height: 2px;
+    }
+
+    header .slogo img,
+    header .mlogo img {
+        width: 70px;
+        margin: 10px 0 0 10px;
+    }
+
+    header #menu li {
+        font-size: 1.5em;
+    }
+
+    /********************************************** HOME */
+    #home .logo div {
+        width: 280px;
+    }
+
+    #home h1 {
+        font-size: 1em;
+    }
+    /********************************************** ABOUT */
+    #about .title {
+        width: 95px;
+        padding-top: 10px;
+        font-size: 1.8em;
+    }
+    #about .content {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #about .table {
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        font-size: 17px;
+        vertical-align: middle;
+        transform: translateY(-30%);
+    }
+
+    /********************************************* PHOTO */
+    #photo .title {
+        padding-top: 10px;
+        font-size: 1.8em;
+    }
+
+    #photo .photo_col-3 {
+        width: 100%;
+        position: relative;
+        padding: 0;
+    }
+    #photo .photo_col-3:last-of-type {
+        display: none;
+    }
+    /*
+    
+    #photo .photo_item a {
+        overflow: hidden;
+    }
+*/
+    /*************************************************portfolio*/
+    #portfolio {
+        width: 100%;
+        height: 100vh;
+        color: #fff;
+    }
+
+    #portfolio .title {
+        padding-top: 10px;
+        font-size: 1.8em;
+    }
+
+    #portfolio ul li {
+        width: 100%;
+        height: calc(100% / 3);
+        display: block;
+    }
+
+    #portfolio ul li div {
+        width: 100%;
+        height: 100%;
+    }
+
+    #portfolio ul li div a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #portfolio .accordion ul:hover li {
+        width: 100%;
+        transition: all .3s;
+    }
+
+    #portfolio .accordion ul:hover li:hover {
+        width: 100%;
+        transition: all .3s;
+    }
+
+    #portfolio .content {
+        width: 200px;
+        height: 80px;
+        opacity: 1;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    #portfolio .content h2 {
+        display: block;
+        font-size: 1.5em;
+    }
+    #portfolio .content p {
+        font-size: 13px;
+    }
+
+    /***********************************************CONCACT*/
+    #contact .title {
+        padding-top: 10px;
+        font-size: 1.8em;
+    }
+
+    #contact .geometry {
+        border-width: 100vh 0px 0px 100vw;
+/*        border-color: rgb(26, 26, 26) red;*/
+    }
+    #contact .left {
+        width: 100%;
+    }
+    #contact .left .bg {
+        background-position: -230px;
+    }
+    #contact .right {
+        display: none;
+    }
+    #contact ul {
+        font-size: 18px;
+    }
+}

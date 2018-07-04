@@ -1,0 +1,82 @@
+@media screen and (max-width:1216px){
+    nav {
+        background-color: #222;
+        width: 85%;
+        text-align: left;
+        padding: 50px 0px 50px 50px;
+        position: fixed;
+        left: -90%;
+        top: 0;
+        z-index: 9999;
+        transition: all .3s;
+    }
+    nav.show {
+        left: 0%;
+        transition: all .3s;
+    } 
+    .ham {
+        width: 40px;
+        height: 40px;
+        background-color:transparent;
+        position: fixed;
+        top: 20px;
+        left: 15px;
+        z-index: 9999;
+    }
+    .ham div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .ham span {
+        width: 30px;
+        height: 3px;
+        background-color:#c59d5f;
+        display: block;
+        position: absolute;
+        top: 0;bottom: 0;left: 0;right: 0;
+        margin: auto;
+        transition: all .3s;
+    }
+    .ham span::before {
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #c59d5f;
+        display: block;
+        position: absolute;
+        top: -10px;
+        transition: all .3s;
+    }
+    .ham span::after {
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #c59d5f;
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        transition: all .3s;
+    }
+    .ham_close {
+        position: fixed;
+        top: 28px;
+        left: 85%;
+        background-color: #222;
+        transition: all .3s;
+    }
+    .ham_close span {
+        background-color: transparent;
+        transition: all .3s;
+    }
+    .ham_close span::before {
+        transform: rotate(45deg);
+        top: 0;
+        transition: all .3s;
+    }
+    .ham_close span::after {
+        transform: rotate(-45deg);
+        bottom: 0;
+        transition: all .3s;
+    }
+}

@@ -1,0 +1,73 @@
+@media screen and (min-width:768px) {
+
+    .fixed-width {
+        width: 95%;
+    }
+    .col-6 {
+        width: 75%;
+    }
+
+    #ourstory {
+        padding-top: 75px;
+    }
+    #ourstory img {
+        width: 75%;
+    }
+    #recipes {
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+    #menu .menu-item {
+        margin: 15px;
+        width: calc(50% - 30px);
+        height: 220px;
+    }
+    #blend {
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+    #rerservation {
+        padding-top: 75px;
+    }
+    #rerservation .rerservation-item {
+        width: calc(50% - 30px);
+        height: 470px;
+        float: left;
+        margin: 15px;
+    }
+
+    footer .stores {
+        text-align: inherit;
+        padding: 50px 0px;
+    }
+    footer .stores .fixed-width {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0 50px;
+    }
+    footer .stores .col-6 {
+        width: 50%;
+        margin: 0;
+    }
+    footer .stores li {
+        padding: 0;
+        padding-top: 15px;
+        padding-right: 20px;
+    }
+
+    footer .stores ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    footer .stores .icon {
+        padding-right: 15px;
+    }
+
+    footer .newsletter div:last-of-type {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+}

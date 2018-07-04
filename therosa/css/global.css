@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|PT+Serif');
+:root {
+    --mainColor: rgb(116, 116, 116);
+    --sublight: #eee;
+    --subdark: #ccc;
+
+}
+
+* {
+    font-family: roboto;
+    box-sizing: border-box;
+}
+
+body,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+p,
+ul,
+ol,
+li {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.no-padding {
+    padding: 0!important;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.btn {
+    color: #c59d5f;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding-bottom: 5px;
+    border-bottom: solid #c59d5f;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1,h2{
+    letter-spacing: 12px;
+}
+h2{
+    font-size: 30px;
+}
+p {
+    letter-spacing: 1px;
+/*    opacity: 0.9;*/
+}
+
+li {
+    list-style: none;
+}
+.article_headline {
+    margin-bottom: -57px;
+} 
+h3 ,h3 span {
+    font-family:"Herr Von Muellerhoff";
+    font-size: 100px;
+    font-weight: normal;
+    color: #c59d5f;
+}
+h3 span {
+    font-size: 1.1em;
+}
+.star {
+    font-size: 2.5em;
+    font-family: "pt+serif";
+    color: #797979;
+    margin-bottom: -25px;
+}

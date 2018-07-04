@@ -1,0 +1,76 @@
+﻿/*@import url('https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Roboto:400,700');*/
+@import url('https://fonts.googleapis.com/css?family=Cardo|Playfair+Display+SC');
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+form,
+input,
+button,
+textarea,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 100%;
+    font-weight: normal;
+    font-family:  'Cardo','Microsoft JhengHei','arial' ,'sans-serif','微軟正黑體';
+}
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+img {
+    width: 100%;
+    vertical-align: top;
+}
+.table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.in {
+    height: 100%;
+    width: calc(100% - 150px);
+    margin-left: 150px;
+    position: relative;
+}

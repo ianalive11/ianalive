@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" ,initial-scale=1, maximum-scale=1, user-scalable=no>
+    <title>MVMT</title>
+    <link rel="stylesheet" href="font/FuturaLight.ttf">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>">
+    <script src="../jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="phone-lg.css">
+    <link rel="stylesheet" href="phone.css">
+    <link rel="stylesheet" href="ham.css">
+    <script>
+        $(document).ready(function() {
+            $(".ham").click(function() {
+                $(this).toggleClass("ham-close");
+                $(".mobile_menu").toggleClass("mobile_menu_show");
+                $("body").toggleClass("body_hide")
+                })
+            });
+//            $(".ham-close").click(function(){
+//                console.log(this);
+//                $(".mobile_menu").animate({
+//                    left:"110"
+//                })
+//            });
+//        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="full-width" id="top">
+            <p>FREE SHIPPING ON ALL ORDERS</p>
+        </div>
+        <nav class="full-width">
+            <div class="fixed-width clearfix">
+                <div class="col-3 menu">
+                    <div class="ham">
+                        <div>
+                            <span></span>
+                        </div>
+                    </div>
+                    <ul class="desktop_menu">
+                        <li class="menu_hover">
+                            <span class="menu_title">MENS</span>
+                            <div class="menu_item">
+                                <ul>
+                                    <li>
+                                        <span>WATCHES</span>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">BEST SELLERS</a></li>
+                                            <li><a href="#">40 SERIES</a></li>
+                                            <li><a href="#">CHRONO</a></li>
+                                            <li><a href="#">CLASSIC</a></li>
+                                            <li><a href="#">MODERN SPORT</a></li>
+                                            <li><a href="#">REVOLVER</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span>ACCESSORIES</span>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">SUNGLASSES</a></li>
+                                            <li><a href="#">STRAPS</a></li>
+                                            <li><a href="#">COLLECTORS CASE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span>FEATURED</span>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">BEST SELLERS</a></li>
+                                            <li><a href="#">MENS SUNGLASSES</a></li>
+                                            <li><a href="#">BRONZE AGE</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li  class="menu_hover">
+                            <span class="menu_title">WOMENS</span>
+                            <div class="menu_item">
+                                <ul>
+                                    <li>
+                                        <span>WATCHES</span>
+                                        <ul>
+                                            <li><a href="#">BEST SELLERS</a></li>
+                                            <li><a href="#">AVENUE</a></li>
+                                            <li><a href="#">BOULEVARD</a></li>
+                                            <li><a href="#">GALA</a></li>
+                                            <li><a href="#">MOD</a></li>
+                                            <li><a href="#">NOVA</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span>ACCESSORIES</span>
+                                        <ul>
+                                            <li><a href="#">SUNGLASSES</a></li>
+                                            <li><a href="#">STRAPS</a></li>
+                                            <li><a href="#">BRACELETS</a></li>
+                                            <li><a href="#">COLLECTORS CASE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span>FEATURED</span>
+                                        <ul>
+                                            <li><a href="#">BEST SELLERS</a></li>
+                                            <li><a href="#">WOMENS SUNGLASSES</a></li>
+                                            <li><a href="#">MARBLE EDITION</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_hover">
+                            <span class="menu_title">BRAND</span>
+                            <div class="menu_item">
+                                <ul>
+                                    <li>
+                                        <span>#JOINTHEMVMT</span>
+                                        <ul>
+                                            <li><a href="#">OUR STORY</a></li>
+                                            <li><a href="#">OUR BLOG</a></li>
+                                            <li><a href="#">SHARE US</a></li>
+                                            <li><a href="#">CONTACT US</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span>OUR INSTA</span>
+                                        <ul>
+                                            <li><a href="#">@MVMT</a></li>
+                                            <li><a href="#">@MVMTFORHER</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span>FEATURED</span>
+                                        <ul>
+                                            <li><a href="#">BEST SELLERS</a></li>
+                                            <li><a href="#">MENS SUNGLASSES</a></li>
+                                            <li><a href="#">BRONZE AGE</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="mobile_menu">
+                        <div>
+                            <input type="text" placeholder="SHARCH THE SITE">
+                            <a href="#"><i class="fab fa-sistrix"></i>
+                            </a>
+                        </div>
+                        <div class="m_title">MENS</div>
+                        <li><a href="#">BEST SELLERS</a></li>
+                        <li><a href="#">40 SERIES</a></li>
+                        <li><a href="#">BRONZE AGE EDITION</a></li>
+                        <li><a href="#">CHRONO</a></li>
+                        <li><a href="#">CLASSIC</a></li>
+                        <li><a href="#">MODERN SPORT</a></li>
+                        <li><a href="#">SUNGLASSES</a></li>
+                        <div class="m_title">WOMENS</div>
+                        <li><a href="#">BEST SELLERS</a></li>
+                        <li><a href="#">AVENUE</a></li>
+                        <li><a href="#">BOULEVARD</a></li>
+                        <li><a href="#">GALA</a></li>
+                        <li><a href="#">MARBLE EDITION</a></li>
+                        <li><a href="#">NOVA</a></li>
+                        <li><a href="#">SUNGLASSES</a></li>
+                        <div class="m_title">BRAND</div>
+                        <li><a href="#">OUR INSTA</a></li>
+                        <li><a href="#">OUR BLOG</a></li>
+                        <li><a href="#">OUR STORY</a></li>
+                        <div class="m_title">SERVICE</div>
+                        <li><a href="#">MY ACCOUNT</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">FAQ`S</a></li>
+                        <li><a href="#">GIFT CARDS</a></li>
+                        <div class="m_com">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-3 logo">
+                    <div>
+                        <svg width="146px" height="28px" viewBox="0 0 146 28" version="1.1">
+                            <defs>
+                                <polygon id="path-1" points="9.8604 28 0.4614 28 0.4614 0.2836 9.8604 0.2836"></polygon>
+                                <polygon id="path-3" points="-0.5868 28 -9.9858 28 -9.9858 0.2836 -0.5868 0.2836 -0.5868 28"></polygon>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Icon" transform="translate(0.000000, -1.000000)">
+                                    <path d="M104.4396,0.9998 L120.2706,0.9998 L120.2706,4.7288 L114.6616,4.7288 L114.6616,28.6968 L110.1216,28.6968 L110.1216,4.7288 L104.4396,4.7288 L104.4396,0.9998 Z M92.0493,1.1132 L98.6833,1.1132 L98.6833,28.7472 L94.4323,28.7472 L94.7333,4.7572 L84.5773,28.7472 L81.3593,28.7472 L71.2463,4.7572 L71.5683,28.7472 L67.2113,28.7472 L67.2113,1.1132 L73.9303,1.1132 L82.9903,22.4832 L92.0493,1.1132 Z M57.9823,1.1132 L62.7263,1.1132 L50.7253,28.7472 L48.0433,28.7472 L35.9993,1.1132 L40.7863,1.1132 L49.3743,21.7072 L57.9823,1.1132 Z M24.8393,1.1132 L31.4723,1.1132 L31.4723,28.7472 L27.2213,28.7472 L27.5223,4.7572 L17.3673,28.7472 L14.1473,28.7472 L4.0353,4.7572 L4.3583,28.7472 L0.0003,28.7472 L0.0003,1.1132 L6.7193,1.1132 L15.7783,22.4832 L24.8393,1.1132 Z" id="Combined-Shape" fill="#000000"></path>
+                                    <g id="Group-9" transform="translate(136.000000, 0.764800)">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <g id="Clip-4"></g>
+                                        <path d="M9.1824,0.2836 C8.9654,0.2836 8.7634,0.3906 8.6434,0.5726 C7.5914,2.1596 2.7194,9.6226 1.0354,12.2016 C0.6604,12.7766 0.4614,13.4466 0.4614,14.1326 L0.4614,14.1506 C0.4614,14.8376 0.6604,15.5076 1.0354,16.0826 C2.7194,18.6606 7.5914,26.1236 8.6434,27.7116 C8.7634,27.8926 8.9654,28.0006 9.1824,28.0006 C9.5574,28.0006 9.8604,27.6966 9.8604,27.3216 L9.8604,0.9616 C9.8604,0.5866 9.5574,0.2836 9.1824,0.2836" id="Fill-3" fill="#221F20" mask="url(#mask-2)"></path>
+                                        <mask id="mask-4" fill="white">
+                                            <use xlink:href="#path-3"></use>
+                                        </mask>
+                                        <g id="Clip-7"></g>
+                                        <path d="M-9.3078,0.2836 C-9.0908,0.2836 -8.8888,0.3906 -8.7688,0.5726 C-7.7178,2.1596 -2.8448,9.6226 -1.1608,12.2016 C-0.7858,12.7766 -0.5868,13.4466 -0.5868,14.1326 L-0.5868,14.1506 C-0.5868,14.8376 -0.7858,15.5076 -1.1608,16.0826 C-2.8448,18.6606 -7.7178,26.1236 -8.7688,27.7116 C-8.8888,27.8926 -9.0908,28.0006 -9.3078,28.0006 C-9.6828,28.0006 -9.9858,27.6966 -9.9858,27.3216 L-9.9858,0.9616 C-9.9858,0.5866 -9.6828,0.2836 -9.3078,0.2836" id="Fill-6" fill="#000000" mask="url(#mask-4)"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <ul class="account">
+                        <li class="account_hover">
+                            <span class="account_title">ACCOUNT</span>
+                            <span>
+                                <svg width="20px" height="12px" x="0px" y="0px" viewBox="0 0 62 66" style="enable-background:new 0 0 62 66;">
+                                    <g transform="translate(0,-952.36218)">
+                                        <path d="M31,952.4c-10.5,0-19,8.5-19,19c0,5.7,2.6,10.8,6.6,14.3c-11,4.9-18.6,16.8-18.6,30.7c0,1.1,0.9,2,2,2h58c1.1,0,2-0.9,2-2c0-13.9-7.6-25.8-18.6-30.7c4-3.5,6.6-8.6,6.6-14.3C50,960.9,41.5,952.4,31,952.4z M31,956.4c8.3,0,15,6.7,15,15c0,5.7-3.1,10.6-7.7,13.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0-0.1,0c-2.1,1.2-4.6,1.8-7.2,1.8s-5-.7-.2-.8c0,0-.1,0-.1,0C19.1,982,16,977,16,971.4C16,963.1,22.7,956.4,31,956.4z M22.7,988.4c2.5,1.2,5.3,1.9,8.3,1.9s5.8-0.7,8.3-1.9c10.1,3.2,17.7,13.4,18.5,25.9H4.2C4.9,1001.8,12.5,991.6,22.7,988.4z"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="account_hover">
+                            <span class="account_title">CART</span>
+                            <span>
+                                <svg width="17px" height="15px" viewBox="0 0 17 15" version="1.1">
+                                    <path d="M4.75132264,14.9278508 C5.49682489,14.9278508 6.10315502,14.3379299 6.10315502,13.6126032 C6.10315502,12.8872766 5.49682489,12.2973556 4.75132264,12.2973556 C4.00582039,12.2973556 3.39949025,12.8872425 3.39949025,13.6125691 C3.39949025,14.3378957 4.00582039,14.9278508 4.75132264,14.9278508 Z" id="Shape"></path>
+                                    <path d="M13.2003715,14.9278508 L13.2997601,14.9278508 C13.6576012,14.8988378 13.9856222,14.7441128 14.2241829,14.4733014 C14.4627436,14.2121838 14.5720957,13.8736867 14.5522039,13.5158703 C14.5024921,12.8002033 13.8564135,12.248955 13.1109112,12.2973215 C12.365409,12.345688 11.8087556,12.9839754 11.8584675,13.6996083 C11.9081442,14.3862622 12.4946177,14.9278508 13.2003715,14.9278508 Z" id="Shape"></path>
+                                    <path d="M0.596401799,1.85261788 L2.30607526,1.85261788 L4.7413943,10.4211319 C4.81096282,10.6725898 5.04952354,10.8466682 5.31790435,10.8466682 L12.8027469,10.8466682 C13.0413076,10.8466682 13.2500483,10.7112625 13.3494369,10.4985114 L16.0729934,4.40576765 C16.1525253,4.22202962 16.1326336,4.01893816 16.0232816,3.85451941 C15.9139295,3.69010066 15.7250807,3.59340182 15.5262684,3.59340182 L7.25621019,3.59340182 C6.92818921,3.59340182 6.6598084,3.85451941 6.6598084,4.17366313 C6.6598084,4.49280685 6.92818921,4.75392444 7.25621019,4.75392444 L14.6118441,4.75392444 L12.4051574,9.6861456 L5.7652057,9.6861456 L3.32992174,1.11763159 C3.26035322,0.866173647 3.0217925,0.692095254 2.75341169,0.692095254 L0.596401799,0.692095254 C0.26838081,0.692095254 0,0.953212844 0,1.27235657 C0,1.59150029 0.26838081,1.85261788 0.596401799,1.85261788 Z" id="Shape"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="dotted mobile_hide"></li>
+                        <li class="account_hover mobile_hide">
+                            <a href="#">
+                                <span class="account_title">
+                                   <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1">
+                                    <path d="M13.7871392,12.7517818 L10.3358997,9.28631113 C11.223274,8.26787909 11.7094716,6.98648317 11.7094716,5.65249447 C11.7094716,2.53575817 9.08298623,0 5.85473581,0 C2.6264854,0 0,2.53575817 0,5.65249447 C0,8.76923077 2.6264854,11.3049889 5.85473581,11.3049889 C7.06666613,11.3049889 8.2215764,10.9520767 9.20899032,10.2821332 L12.6864488,13.7739002 C12.831799,13.9196363 13.0272963,14 13.236794,14 C13.4350914,14 13.6232066,13.9270091 13.7660112,13.7942984 C14.0694393,13.5124109 14.0791123,13.0449742 13.7871392,12.7517818 Z M5.85473581,1.47456377 C8.24092249,1.47456377 10.1821492,3.34873433 10.1821492,5.65249447 C10.1821492,7.95625461 8.24092249,9.83042517 5.85473581,9.83042517 C3.46854914,9.83042517 1.52732239,7.95625461 1.52732239,5.65249447 C1.52732239,3.34873433 3.46854914,1.47456377 5.85473581,1.47456377 Z" id="Shape"></path>
+                                </svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="full-width">
+        <div class="fixed-width clearfix" id="watch">
+            <div class="col-2 menwatch">
+                <img src="images/mens_aa272689-556f-45fe-bb06-50a5ddd3e860_900x.progressive.jpg" alt="" width="100%">
+                <h2>MENS WATCHES</h2>
+                <a href="#" class="btn">
+                    SHOP NOW
+                </a>
+            </div>
+            <div class="col-2 womenwatch">
+                <img src="images/womens_c1c4c609-a174-4a52-8614-068b95ee6d43_900x.progressive.jpg" alt="" width="100%">
+                <h2>WOMENS WATCHES</h2>
+                <a href="#" class="btn">
+                    SHOP NOW
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="full-width" id="sunglass">
+        <div class="fixed-width clearfix">
+            <div class="main">
+                <div>
+                    <p>SUNGLASSES
+                        <br> DESIGNED IN L.A.</p>
+                    <a href="" class="btn">
+                        SHOP NOW
+                    </a>
+                </div>
+            </div>
+            <div class="sub clearfix">
+                <a href="">
+                    <div class="sub-1">
+                        <p>NEW:MONOCHROME</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="sub-2">
+
+                        <p>NEW:MARBLE</p>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-1" id="join">
+        <h3>#JOINTHEMVMT</h3>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptates harum velit, eum voluptatibus. Quos.</P>
+    </div>
+    <div class="full-width" id="homesection">
+        <div class="fixed-width">
+            <div class="col-3">
+                <img src="images/HP_Blogtile_dest4_1000x.jpg" alt="">
+                <p>DETINATION EVERYWHERE COL.IV</p>
+            </div>
+            <div class="col-3">
+                <img src="images/HP_Blogtile_viewfromthetop_76db2a36-c524-47c6-8aaf-a394cbf072e8_1000x.jpg" alt="">
+                <p>VIEW FROM THE TOP</p>
+            </div>
+            <div class="col-3">
+                <img src="images/HP_Blogtile_hishers_ac5e3727-d93e-4fed-a3d5-a2a053cbd038_1000x.jpg" alt="">
+                <p>HIS&amp;HERS</p>
+            </div>
+        </div>
+    </div>
+    <div class="full-width" id="ig">
+        <div class="left hide">
+            <div>
+                <a href="">
+                    <div class="hover">
+                        <div>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <p>SHOP THE LOOK</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="hover">
+                        <div>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <p>SHOP THE LOOK</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="hover">
+                        <div>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <p>SHOP THE LOOK</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="hover">
+                        <div>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <p>SHOP THE LOOK</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="center">
+            <div>
+                <a href="">
+                    <div>
+                        <p>SHOP OUR INSTAGRAM</p>
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="right hide">
+            <div>
+                <a href="">
+                    <div class="hover">
+                        <div>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <p>SHOP THE LOOK</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="hover">
+                        <div>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <p>SHOP THE LOOK</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="hover">
+                        <div>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <p>SHOP THE LOOK</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="hover">
+                        <div>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <p>SHOP THE LOOK</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="full-width" id="proposition">
+        <div class="col-4">
+            <div>
+                <i class="fas fa-plane"></i>
+            </div>
+            <div>
+                <p>FREE SHOPPING WORLDWIDE</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div><i class="fas fa-redo-alt"></i></div>
+            <div>
+                <p>FREE RETURNS WORLDWIDE</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div><i class="fas fa-certificate"></i></div>
+            <div>
+                <p>24 MONTH WARRANTY ON ALL PRODUCTS</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div><i class="fas fa-shield-alt"></i></div>
+            <div>
+                <p>100% SAFE & SECURE CHECKOUT</p>
+            </div>
+        </div>
+    </div>
+    <div class="full-width clearfix" id="footer">
+        <div class="col-4 left">
+            <div>
+                <svg width="146px" height="28px" viewBox="0 0 146 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <polygon id="path-1" points="9.8604 28 0.4614 28 0.4614 0.2836 9.8604 0.2836"></polygon>
+                        <polygon id="path-3" points="-0.5868 28 -9.9858 28 -9.9858 0.2836 -0.5868 0.2836 -0.5868 28"></polygon>
+                    </defs>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Icon" transform="translate(0.000000, -1.000000)">
+                            <path d="M104.4396,0.9998 L120.2706,0.9998 L120.2706,4.7288 L114.6616,4.7288 L114.6616,28.6968 L110.1216,28.6968 L110.1216,4.7288 L104.4396,4.7288 L104.4396,0.9998 Z M92.0493,1.1132 L98.6833,1.1132 L98.6833,28.7472 L94.4323,28.7472 L94.7333,4.7572 L84.5773,28.7472 L81.3593,28.7472 L71.2463,4.7572 L71.5683,28.7472 L67.2113,28.7472 L67.2113,1.1132 L73.9303,1.1132 L82.9903,22.4832 L92.0493,1.1132 Z M57.9823,1.1132 L62.7263,1.1132 L50.7253,28.7472 L48.0433,28.7472 L35.9993,1.1132 L40.7863,1.1132 L49.3743,21.7072 L57.9823,1.1132 Z M24.8393,1.1132 L31.4723,1.1132 L31.4723,28.7472 L27.2213,28.7472 L27.5223,4.7572 L17.3673,28.7472 L14.1473,28.7472 L4.0353,4.7572 L4.3583,28.7472 L0.0003,28.7472 L0.0003,1.1132 L6.7193,1.1132 L15.7783,22.4832 L24.8393,1.1132 Z" id="Combined-Shape" fill="#000000"></path>
+                            <g id="Group-9" transform="translate(136.000000, 0.764800)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-4"></g>
+                                <path d="M9.1824,0.2836 C8.9654,0.2836 8.7634,0.3906 8.6434,0.5726 C7.5914,2.1596 2.7194,9.6226 1.0354,12.2016 C0.6604,12.7766 0.4614,13.4466 0.4614,14.1326 L0.4614,14.1506 C0.4614,14.8376 0.6604,15.5076 1.0354,16.0826 C2.7194,18.6606 7.5914,26.1236 8.6434,27.7116 C8.7634,27.8926 8.9654,28.0006 9.1824,28.0006 C9.5574,28.0006 9.8604,27.6966 9.8604,27.3216 L9.8604,0.9616 C9.8604,0.5866 9.5574,0.2836 9.1824,0.2836" id="Fill-3" fill="#221F20" mask="url(#mask-2)"></path>
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <g id="Clip-7"></g>
+                                <path d="M-9.3078,0.2836 C-9.0908,0.2836 -8.8888,0.3906 -8.7688,0.5726 C-7.7178,2.1596 -2.8448,9.6226 -1.1608,12.2016 C-0.7858,12.7766 -0.5868,13.4466 -0.5868,14.1326 L-0.5868,14.1506 C-0.5868,14.8376 -0.7858,15.5076 -1.1608,16.0826 C-2.8448,18.6606 -7.7178,26.1236 -8.7688,27.7116 C-8.8888,27.8926 -9.0908,28.0006 -9.3078,28.0006 C-9.6828,28.0006 -9.9858,27.6966 -9.9858,27.3216 L-9.9858,0.9616 C-9.9858,0.5866 -9.6828,0.2836 -9.3078,0.2836" id="Fill-6" fill="#000000" mask="url(#mask-4)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <ul>
+                    <li><a href="">support@mvmt.com</a></li>
+                    <li>
+                        <div>Call Toll-Free</div>
+                    </li>
+                    <li><a href="">+1 (888) 507-0220</a></li>
+                    <li>
+                        <div>M-T 8:30-2 pm & F 9-1 pm PST</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-2 center clearfix">
+            <div>
+                <p>SHOP MVMT</p>
+                <ul>
+                    <li><a href="#">SHOP MENS</a></li>
+                    <li><a href="#">SHOP WOMENS</a></li>
+                    <li><a href="#">SHOP INSTA</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>CUSTOMER SERVICE</p>
+                
+                <ul >
+                    <li><a href="#">MY ACCOUNT</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">SHIPPING & RETURNS</a></li>
+                    <li><a href="#">STORE LOCATOR</a></li>
+                    <li><a href="#">SITE MAP</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>#JOINTHEMVMT</p>
+                <ul>
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">OUR BLOG</a></li>
+                    <li><a href="#">SHARE US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">BECOME AN AFFILIATE</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-4 right">
+            <div>
+                <p>SIGN UP FOR NEWSLETTER</p>
+                <div>
+                    <input type="text" placeholder="Enter your email address">
+                    <svg width="20px" height="12px" viewBox="0 0 20 12" version="1.1">
+                        <title>31467BEE-74EC-4CB2-B7C1-225DFEF5892A</title>
+                        <desc>Created with sketchtool.</desc>
+                        <defs></defs>
+                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Footer" transform="translate(-1364.000000, -111.000000)" fill="#FFFFFF">
+                                <g id="Email-Input">
+                                    <g transform="translate(1090.000000, 55.000000)">
+                                       <g id="envelope" transform="translate(274.000000, 56.000000)">
+                                           <g id="Capa_1">
+                                               <g id="Group">
+                                                    <polygon id="Shape" points="9.54942545 7.66512 0.861556364 0.0359563636 18.2369891 0.0359563636"></polygon>
+                                                    <polygon id="Shape" points="6.08853818 6.01226182 0 11.3590255 0 0.665541818"></polygon>
+                                                    <polygon id="Shape" points="6.87774545 6.70538182 9.54942545 9.05136 12.2205818 6.70538182 18.2424873 11.9935418 0.856101818 11.9935418"></polygon>
+                                                    <polygon id="Shape" points="13.0097891 6.01252364 19.0985891 0.665541818 19.0985891 11.3590255"></polygon>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-width community">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="full-width policy">
+        <div>TERM & CONDITIONS</div>
+        <div>PRIVACY POLICY</div>
+        <div>&copy;2018 MVMT</div>
+    </div>
+</body>
+
+</html>

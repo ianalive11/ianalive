@@ -1,0 +1,103 @@
+@media screen and (min-width:1217px) {
+    .fixed-width {
+        width: 1200px;
+        margin: auto;
+    }
+    .col-6 {
+        width: calc(100% / 12 * 6);
+    }
+    .nav {
+        position: fixed;
+        z-index: 9999;
+        transition: all .3s;
+    }
+    .nav > div {
+        padding: 0 20px;
+    }
+    .nav.nav_change {
+        background-color: #fff;
+        box-shadow: 0px 0px 10px -1px rgba(0,0,0,.3);
+        transition: all .3s;
+    }
+    .nav.nav_change .menu a {
+        color: #000;
+        transition: all .3s;
+    }
+    .nav.nav_change .menu a:hover {
+        border-bottom: 1px solid #000;
+    }
+    .nav.nav_change .logo {
+        color: #000;
+        transition: all .3s;
+    }
+    .nav .logo {
+        float: left;
+        position:static;
+        left: 0%;
+        transform: translate(0%);
+        margin-left: 80px;
+        transition: all .3s;
+    }
+    .nav .menu {
+        float: right;
+    }
+    .nav .menu li {
+        float: left;
+    }
+    .nav .menu a {
+        margin-right: 20px;
+        transition: all .3s;
+    }
+    #ourstory .fixed-width {
+        display: flex;
+    }
+    #ourstory .col-6:first-of-type {
+        padding-bottom: 0px;
+    }
+    #ourstory img {
+        width: 100%;
+    }
+    #recipes {
+        padding-top: 350px;
+        padding-bottom: 350px;
+    }
+    #menu {
+        height: 650px;
+    }
+    #menu .fixed-width {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    #blend {
+        background-position: center bottom;
+        padding-top: 350px;
+        padding-bottom: 350px;
+    }
+    #rerservation {
+        height: 650px;
+    }
+    #rerservation .fixed-width {
+        display: flex;
+    }
+    footer .stores .fixed-width {
+        padding: 0 80px
+    }
+    footer .stores ul {
+        display: flex;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+    }
+    footer .stores li {
+        padding-right: 40px;
+    }
+    footer .copy .fixed-width div:first-of-type {
+        float: left;
+        padding: 10px 50px;
+    }
+    footer .copy .fixed-width div:last-of-type {
+        float: right;
+        padding: 10px 50px;
+    }
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Taipei City Weather</title>
+    <script src="../jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
+    <script>
+        $.ajax({
+            url: "http://api.openweathermap.org/data/2.5/forecast",
+            data: {
+                q: "taipei",
+                appid: "48f81f7b69bc00e0a70fc1df07bb5e2c",
+                units: "metric",
+                cnt: 8,
+                //                lang: "zh_TW",
+            },
+            success: function(e) {
+                $(e.list).each(function() {
+                    let temp = Math.round(this.main.temp * 10) / 10;
+                    let des = this.weather[0].description;
+                    let icon = this.weather[0].icon;
+                    let dt = new Date(this.dt * 1000);
+                    let year = dt.getFullYear();
+                    let mounth = dt.getMonth() + 1;
+                    let date = dt.getDate();
+                    let day = dt.getDay();
+                    let aryDay = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+                    let hour = dt.getHours();
+                    console.log(year, mounth, date, day)
+                    let c = `
+                            <tr>
+                                <td>${aryDay[day]}</td>
+                                <td>${mounth}/${date}/${year}</td>
+                                <td>${hour}:00</td>
+                                <td class="temp">${temp}&deg</td>
+                                <td>${des}</td>
+                                <td><img src="icon/${icon}.png"></td>
+                            <tr>
+                            `
+                    $("table").append(c);
+                })
+            },
+            error: function() {
+                console.log("error")
+            }
+        })
+        $.ajax({
+            url: "http://api.openweathermap.org/data/2.5/weather",
+            data: {
+                q: "taipei",
+                appid: "48f81f7b69bc00e0a70fc1df07bb5e2c",
+                units: "metric",
+                //                lang: "zh_TW",
+            },
+            success: function(e) {
+                let temp = Math.round(e.main.temp * 10) / 10;
+                let des = e.weather[0].description;
+                let icon = e.weather[0].icon;
+                let dt = new Date(e.dt * 1000);
+                let year = dt.getFullYear();
+                let mounth = dt.getMonth() + 1;
+                let date = dt.getDate();
+                let day = dt.getDay();
+                let aryDay = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+                let hour = dt.getHours();
+                console.log('current', year, mounth, date, day, dt)
+                let c = `
+                        <div class=box>
+                            <div>${aryDay[day]} , ${mounth}/${date}/${year}</div>
+                            <div>NOW</div>
+                            <div class="temp">${temp}&deg</div>
+                            <div>${des}</div>
+                            <div><img src="icon/${icon}.png"></div>
+                        </div>
+                        `
+                $(".top").append(c);
+
+            },
+            error: function() {
+                console.log("error")
+            }
+        })
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'PT Serif', 'Microsoft JhengHei', 'arial', 'sans-serif', '微軟正黑體';
+            color: #152f46;
+        }
+
+        .container {
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 25%, rgba(0, 0, 0, .1)100%), url(images/ph01.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .top {
+            width: 100%;
+            padding: 50px;
+            font-size: 16px;
+            background-color: transparent;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            margin-right: 100px;
+            font-size: 1.5em;
+        }
+
+        h1,
+        span {
+            color: rgb(5, 62, 119);
+        }
+
+        .top .box {
+            width: 170px;
+            height: 170px;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            background-color: rgb(255, 255, 255, 0.3)
+        }
+
+        .box .temp {
+            font-size: 1.8em;
+        }
+
+        .box img {
+            transform: scale(0.9);
+        }
+
+        .bottom {
+            padding-bottom: 100px;
+        }
+
+        .bottom table {
+            margin: auto;
+            background-color: rgb(255, 255, 255, 0.3);
+        }
+
+        .bottom table td {
+            width: 90px;
+            text-align: center;
+
+        }
+
+        th {
+            padding: 10px 0;
+            background-color: rgb(255, 255, 255, 0.3);
+        }
+
+        img {
+            transform: scale(0.6);
+        }
+
+        .temp {
+            font-size: 1em;
+        }
+
+        @media screen and (max-width:480px) {
+            .top {
+                padding: 25px;
+                font-size: 15px;
+            }
+            .title {
+                margin-right: 20px;
+                font-size: 1em;
+            }
+            .top .box {
+/*                background-color: transparent;*/
+            }
+            .bottom table{
+/*                background-color: transparent;*/
+            }
+            .bottom table td {
+                width: 90px;
+                line-height: 10px;
+                text-align: center;
+                color: #212121;
+            }
+            th {
+                color: #212121;
+/*                background-color: transparent;*/
+            }
+            img {
+                transform: scale(0.5);
+            }
+            .q {
+                width: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="top">
+            <div class="title">
+                <h1>Taipei City</h1>
+                <span>Current Weather</span>
+            </div>
+        </div>
+        <div class="bottom">
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Temp</th>
+                    <th>Weather</th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>

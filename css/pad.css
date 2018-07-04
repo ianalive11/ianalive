@@ -1,0 +1,93 @@
+@media screen and (max-width:823px) {
+    .in {
+        width: 100%;
+        margin: 0;
+    }
+    header {
+        width: 0px;
+        position: absolute;
+    }
+
+    header .slogo {
+        position: fixed;
+        display: none;
+    }
+    header .mlogo {
+        position: fixed;
+    }
+
+    header #menu {
+        position: fixed;
+        right: -250px;
+        top: 0;
+        transition: all .4s;
+    }
+
+    header #menu li {
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+
+    /********************************************** HOME */
+
+
+    /********************************************** ABOUT */
+    #about .title {
+        padding-top: 25px;
+        font-size: 2.5em;
+    }
+
+    #about .table {
+        transform: translate(-70px);
+    }
+    #about img {
+        transform: scale(0.6);
+    }
+    #about ul {
+        padding: 10px 25px;
+    }
+    /********************************************* PHOTO */
+    #photo .title {
+        padding-top: 25px;
+        font-size: 2.5em;
+    }
+
+    #photo .photo_col-3 {
+        width: 100%;
+        position: relative;
+        padding: 0;
+    }
+    #photo .photo_col-3:last-of-type{
+        display: none;
+    }
+/*
+    
+    #photo .photo_item a {
+        overflow: hidden;
+    }
+*/
+
+    /************************************************* portfolio*/
+    #portfolio .title {
+        padding-top: 25px;
+        font-size: 2.5em;
+    }
+
+    #portfolio ul .therosa {
+        background-image: url("https://images.unsplash.com/photo-1518622923628-f909e4f7c583?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b80680b2caf08d18af22d5d5b9f6a824&auto=format&fit=crop&w=1300&q=80");
+    }
+
+    /***********************************************CONCACT*/
+    #contact .title {
+        padding-top: 25px;
+        font-size: 2.5em;
+    }
+    #contact .geometry {
+        border-width: 100vh 30vw 0vw;
+    }
+    #contact .content {
+        height: 60%;
+        text-align: center;
+    }
+
+}

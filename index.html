@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Ianalive</title>
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="lightbox/js/lightbox.min.js"></script>
+    <script src="jquery.mousewheel.min.js"></script>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/ham.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/pad.css">
+    <link rel="stylesheet" href="css/phone.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="bg_">
+            <div>
+                <div class="slogo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <div class="mlogo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="ham">
+                <div>
+                    <span></span>
+                </div>
+            </div>
+            <div id="menu">
+                <div class="table">
+                    <div class="cell">
+                        <nav>
+                            <ul>
+                                <li data-target="home"><a href="javascript:;"><span>HOME</span></a></li>
+                                <li data-target="about"><a href="javascript:;"><span>ABOUT</span></a></li>
+                                <li data-target="photo"><a href="javascript:;"><span>PHOTO</span></a></li>
+                                <li data-target="portfolio"><a href="javascript:;"><span>PORTFOLIO</span></a></li>
+                                <li data-target="contact"><a href="javascript:;"><span>CONTACT</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="home" class="box1">
+            <div class="bg-wrap">
+                <div class="bg"></div>
+            </div>
+            <div class="table">
+                <div class="logo cell">
+                    <div>
+                        <img src="images/logo.svg" alt="">
+                        <h1>Welcome to my website.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="box2">
+            <div class="in">
+                <div class="title">About</div>
+                <div class="content">
+                    <img src="images/ian.png" alt="">
+                    <div class="table">
+                        <ul class="cell">
+                            <li>Xie,HaoTing</li>
+                            <li>1992.05.24</li>
+                            <li>Born in Taipei city</li>
+                            <li>See a movie 、Listening to music</li>
+                            <li>This is my website,and all of design and training are form me, I hope you will like it.
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div id="photo" class="box3">
+            <div class="in table">
+                <div class="cell clearfix">
+                    <div class="title">Photo</div>
+                    <div class="photo_col-3">
+                        <div class="photo_item _top ph1">
+                            <a href="images/ph07.jpg" data-lightbox="q" data-title="Lake reflection">
+                               
+                                <img src="images/ph07.jpg" >
+                                <div class="photo_contect">
+                                    <span>Lake reflection</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="photo_item _middle ph2">
+                            <a href="images/contact01.jpg" data-lightbox="q" data-title="The river">
+                               <img src="images/contact01.jpg">
+                                <div class="photo_contect">
+                                    <span>The river</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="photo_item _bottom ph3 ">
+                            <a href="images/ph03.jpg" data-lightbox="q" data-title="Enjoy the raining">
+                               <img src="images/ph03.jpg">
+                                <div class="photo_contect">
+                                    <span>Enjoy the raining</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="photo_col-3">
+                        <div class="photo_item _top ph4">
+                            <a href="images/ph04.jpg" data-lightbox="q" data-title="Strarry sky">
+                               <img src="images/ph04.jpg" >
+                                <div class="photo_contect">
+                                    <span>Strarry sky</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="photo_item _middle ph5">
+                            <a href="images/ph05.jpg" data-lightbox="q" data-title="Surfer">
+                               <img src="images/ph05.jpg" >
+                                <div class="photo_contect">
+                                    <span>Surfer</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="photo_item _bottom ph6">
+                            <a href="images/ph06.jpg" data-lightbox="q" data-title="The track">
+                               <img src="images/ph06.jpg" >
+                                <div class="photo_contect">
+                                    <span>The track</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio" class="box4">
+            <div class="in accordion">
+
+                <div class="title">Portfolio</div>
+                <ul>
+                    <li class="mvmt">
+                        <div>
+                            <a href="mvmt" target="_blank">
+                                <div class="content">
+                                    <h2>MVMT</h2>
+                                    <p>HTML、CSS、JQuery</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </li>
+                    <li class="therosa">
+                        <div>
+                            <a href="therosa" target="_blank">
+                                <div class="content">
+                                    <h2>The Rosa</h2>
+                                    <p>HTML、CSS、JQuery</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="training">
+                        <div>
+                            <a href="weather" target="_blank">
+                                <div class="content">
+                                    <h2>Taipei Weather</h2>
+                                    <p>HTML、CSS、Ajax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="contact" class="box5">
+            <div class="in clearfix">
+                <div class="title">Contact</div>
+                <div class="geometry"></div>
+                <div class="bg-container">
+                    <div class="left">
+                        <div class="bg-wrap">
+                            <div class="bg"></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="bg-wrap">
+                            <div class="bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <ul>
+                        <li>Gmail:</li>
+                        <li>ian527746@gmail.com</li>
+                    </ul>
+                    <ul>
+                        <li>Phone:</li>
+                        <li>0988-035-356</li>
+                        <li>12:00AM ~ 08:00PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

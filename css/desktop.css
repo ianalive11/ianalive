@@ -1,0 +1,483 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+/********************************************HEADER*/
+
+header {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    background-color: #000;
+    transition: all .3s;
+    z-index: 99999;
+}
+
+header .slogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+}
+
+header .mlogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease;
+
+}
+
+header .mlogo.toggle {
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+header .slogo img,
+header .mlogo img {
+    display: block;
+    width: 100px;
+    margin: 25px auto;
+}
+
+header #menu {
+    height: 100vh;
+}
+
+header #menu li {
+    font-family: "Playfair Display SC";
+    padding: 10px 30px;
+}
+
+header #menu span {
+    color: #fff;
+}
+
+header #menu a {
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+    transition: all .4s;
+}
+
+header #menu li:hover a {
+    border-bottom: 1px solid #fff;
+    transition: all .4s;
+}
+
+/**********************************************MAIN*/
+
+main {
+    width: 100%;
+    z-index: 9999;
+}
+
+/********************************************** HOME */
+
+#home {
+    width: 100%;
+    height: 100vh;
+/*    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .2)),url(../images/bg-03.jpg);*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;    */
+    position: relative;
+}
+#home .bg-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#home .bg {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1);
+/*    will-change: transform;*/
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .2)),url(../images/bg-03.jpg);
+    z-index: -1;
+}
+
+#home .logo div {
+    position: relative;
+    width: 500px;
+    margin: auto;
+}
+
+#home .logo img {
+    display: block;
+    transform: scale(0.8);
+}
+
+#home .logo {
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+#home .logo.toggle {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+#home h1 {
+    font-size: 1.5em;
+    font-family: "Playfair Display SC";
+    color: #fff;
+    text-align: center;
+}
+/********************************************** ABOUT */
+
+#about {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url(../images/photo01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about .title {
+    width: 160px;
+    border-bottom: 1px solid;
+    padding-top: 50px;
+    font-family: "Playfair Display SC";
+    text-align: center;
+    font-size: 3em;
+    margin: auto;
+}
+
+#about .content {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#about img {
+    width: 250px;
+    height: 250px;
+    vertical-align: middle;
+}
+
+#about .table {
+    width: 35vw;
+    height: 200px;
+    text-align: center;
+    font-size: 17px;
+    vertical-align: middle;
+    transform: translate(-40px);
+}
+
+#about ul {
+    border: 2px #fff solid;
+    padding: 10px 50px;
+}
+
+#about ul li:last-of-type::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 200px;
+    background-color: #fff;
+    margin: 8px auto;
+}
+
+/********************************************* PHOTO */
+
+#photo {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(75deg, #050f31 0%, #222 30%, #222 40%, #061139 100%);
+}
+
+#photo .title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-bottom: 1px solid;
+    padding-top: 50px;
+    font-family: "Playfair Display SC";
+    text-align: center;
+    font-size: 3em;
+    z-index: 9999;
+}
+
+#photo .photo_col-3 {
+    width: calc(100% /2);
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+#photo .photo_item {
+    width: 60%;
+    max-height: 35%;
+    position: absolute;
+    overflow: hidden;
+}
+#photo ._top {
+    left: 10%;
+    bottom: 55%;
+}
+
+#photo ._middle {
+    right: 5%;
+    bottom: 30%;
+    z-index: 999;
+}
+
+#photo ._bottom {
+    left: 5%;
+    bottom: 4%;
+}
+#photo .photo_item a {
+    overflow: hidden;
+}
+
+#photo .photo_item .photo_contect {
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+}
+
+#photo .photo_item .photo_contect::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#photo .photo_item:hover img{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+#photo .photo_item:hover .photo_contect {
+    opacity: 1;
+    transition: all 1s;
+}
+
+#photo ._top:hover,
+#photo ._bottom:hover {
+    z-index: 9998;
+}
+
+/*************************************************portfolio*/
+
+#portfolio {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+
+#portfolio .title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-bottom: 1px solid;
+    padding-top: 50px;
+    font-family: "Playfair Display SC";
+    text-align: center;
+    font-size: 3em;
+}
+
+#portfolio ul {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio ul li {
+    display: table-cell;
+    width: calc(100% / 3);
+    transition: all .3s;
+}
+
+#portfolio ul .mvmt {
+    background-image: url("../images/MVMT.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#portfolio ul .therosa {
+    background-image: url("../images/therosa.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#portfolio ul .training {
+    background-image: url(../images/ph01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#portfolio ul li div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio ul li div a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio .accordion ul:hover li {
+    width: 10%;
+    transition: all .3s;
+}
+
+#portfolio .accordion ul:hover li:hover {
+    width: 80%;
+    transition: all .3s;
+}
+
+#portfolio .content {
+    text-align: center;
+    width: 586px;
+    height: 100px;
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    opacity: 0;
+    transition: all .4s;
+}
+#portfolio .content h2 {
+    display: block;
+    font-size: 2.5em;
+}
+#portfolio .accordion ul:hover li:hover .content {
+    opacity: 1;
+    transition: all .4s;
+}
+/***********************************************CONCACT*/
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    color: #fff
+}
+
+#contact .title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-bottom: 1px solid;
+    padding-top: 50px;
+    font-family: "Playfair Display SC";
+    text-align: center;
+    font-size: 3em;
+    z-index: 99;
+}
+
+#contact .geometry {
+    width: 0;
+    height: 0;
+    border-width: 100vh 350px 0px;
+    border-style: solid;
+    border-color: rgb(26, 26, 26) transparent;
+    position: absolute;
+    left: 0;right: 0;
+    top: 0;bottom: 0;
+    margin:auto;
+    z-index: 1;
+}
+#contact .bg-container {
+    display: flex;
+}
+#contact .left {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+#contact .left .bg-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+#contact .left .bg {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/photo03.jpg);
+    z-index: -1;
+}
+#contact .right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+#contact .right .bg-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+#contact .right .bg {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: 500px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .2)),url(../images/contact01.jpg);
+    z-index: -1;
+}
+#contact .content {
+    width: 210px;
+    height: 20%;
+    position: absolute;
+    left: 0;right: 0;
+    top: 0;bottom: 0;
+    margin: auto;
+    z-index: 2;
+}
+#contact ul {
+    margin: 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}

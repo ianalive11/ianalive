@@ -1,0 +1,161 @@
+@media screen and (max-width:960px) {
+
+    nav .fixed-width {
+        padding: 0 20px;
+        height: 55px;
+    }
+    nav .logo svg {
+        height: 20px;
+    }
+    nav ul li {
+        margin: 0 8px;
+        letter-spacing: 0px;
+    }
+    nav .account span {
+        line-height: 55px;
+    }
+    nav .account svg {
+        height: 18px;
+        width: 18px;
+        transform: translateY(50%)
+    }
+    nav .account_title::after {
+        animation: none;
+    }
+    #top {
+        display: none;
+    }
+    #watch {
+        margin-top: 50px;
+    }
+
+    #watch .menwatch {
+        width: calc(50% - 40px);
+        margin: 10px 10px 10px 30px;
+    }
+    #watch .womenwatch {
+        width: calc(50% - 40px);
+        margin: 10px 30px 10px 10px;
+    }
+    #watch .menwatch a {
+        bottom: 30px;
+        left: 30px;
+    }
+    #watch .menwatch h2 {
+        bottom: 80px;
+        left: 30px;
+        font-size: 24px;
+    }
+    #watch .womenwatch a {
+        bottom: 30px;
+        right: 30px;
+    }
+    #watch .womenwatch h2 {
+        bottom: 80px;
+        right: 30px;
+        font-size: 24px;
+    }
+    #sunglass > div {
+        padding: 10px 30px;
+    }
+    #sunglass .main {
+        float: none;
+        width: 100%;
+        margin: 0;
+        height: 36vw;
+        position: relative;
+    }
+    #sunglass .main p {
+        font-size: 24px;
+    }
+    #sunglass .main a {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    #sunglass .main p {
+        bottom: 80px;
+        right: 30px;
+    }
+    #sunglass .sub {
+        float: none;
+        width: 100%;
+        margin: 20px 0 0;
+    }
+    #sunglass .sub-1 {
+        width: calc(50% - 10px);
+        height: 25vw;
+        float: left;
+        margin: 0;
+    }
+    #sunglass .sub p {
+        text-align: center;
+        color: #fff;
+    }
+    #sunglass .sub-2 {
+        width: calc(50% - 10px);
+        height: 25vw;
+        float: right;
+    }
+    #homesection > div {
+        padding: 0 10px;
+    }
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #footer .right {
+        padding: 20px 0;
+        width: 100%;
+    }
+    #footer .right > div {
+        width: 90%;
+    }
+    #footer .right input {
+        padding: 10px 40px 10px 20px;
+    }
+    #footer .right svg {
+        top: 13px;
+    }
+    #footer .center {
+        width: 70%;
+        padding: 0 0 0 30px;
+        /*        margin: auto;*/
+    }
+    #footer .center div {
+        width: calc(100% / 3);
+        font-size: 12px;
+        padding: 0 5px;
+    }
+    #footer .left {
+        width: 20%;
+        /*        margin: auto;*/
+    }
+    #footer .left > div {
+        width: 100%;
+    }
+    .community {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .community a {
+        margin: 18px;
+    }
+    nav a:hover {
+        border-bottom: none;
+    }
+    #watch .col-2 .btn:hover,
+    #sunglass .btn:hover {
+        color: #fff;
+        background-color: transparent;
+    }
+    #ig .left > div:hover .hover,
+    #ig .right > div:hover .hover {
+        visibility: visible;
+        opacity: 0;
+    }
+    .community a:hover {
+        color: #000;
+    }
+}

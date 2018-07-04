@@ -1,0 +1,30 @@
+@media screen and (min-width:480px) {
+    .col-6 {
+        width: 90%;
+        margin: auto;
+    }
+    #ourstory .col-6:first-of-type {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    #recipes {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    #menu .col-6:last-of-type {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    #menu .menu-item {
+        height: 300px;
+    }
+    #blend {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    #delight .col-6:first-of-type {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}

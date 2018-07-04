@@ -1,0 +1,43 @@
+@media screen and (max-width:1280px) {
+    nav .fixed-width {
+        padding: 0 80px;
+    }
+    nav .menu_item > ul {
+        padding: 0 80px 20px 80px;
+    }
+    #watch .menwatch {
+        width: calc(50% - 80px);
+        margin: 20px 20px 20px 60px;
+    }
+
+    #watch .womenwatch {
+        width: calc(50% - 80px);
+        margin: 20px 60px 20px 20px;
+    }
+    #sunglass > div {
+        padding: 20px 60px;
+    }
+    #sunglass .main {
+        height: 36vw;
+    }
+    #sunglass .main > div {
+        height: 36vw;
+    }
+    #sunglass .sub {
+        width: calc(32% - 10px);
+    }
+    #sunglass .sub-1 {
+        height: calc(18vw - 20px);
+    }
+    #sunglass .sub-2 {
+        height: calc(18vw - 20px);
+    }
+    #sunglass .sub p {
+        font-size: 24px;
+        line-height: 80px;
+    }
+
+    #homesection > div {
+        padding: 0 40px;
+    }
+}
